@@ -11,7 +11,7 @@ A Python tool that helps you discover bug bounty programs and security vulnerabi
 - Saves detailed results in JSON format
 - Rate limit friendly with built-in delays
 
-**Tip: Make a list of startups domains and check them periodically so you be the first one who test their bug bounty program.**
+**🚀Tip: Make a list of startups domains and check them periodically so you be the first one who test their bug bounty program.**
 
 ## Installation
 
