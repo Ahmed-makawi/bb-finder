@@ -17,9 +17,9 @@ A Python tool that helps you discover bug bounty programs and security vulnerabi
 
 Clone the repository:
 
-`git clone https://github.com/Ahmed-makawi/bug-bounty-finder.git`
+`git clone https://github.com/Ahmed-makawi/bb-finder.git`
 
-`cd bug-bounty-finder`
+`cd bb-finder`
 
 Install requirements:
 
