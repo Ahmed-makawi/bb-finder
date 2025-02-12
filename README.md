@@ -4,7 +4,7 @@ A Python tool that helps you discover bug bounty programs and security vulnerabi
 
 ## Features
 
-- Use list of SerpApi keys so when one reach the quota limit the tools jump to the next key.
+- Use list of SerpApi keys so when one reaches the quota limit, the tool jump to the next key.
 - Search for bug bounty programs and vulnerability disclosure pages.
 - Support for both single domain and bulk domain checking.
 - Identifies common bug bounty program indicators.
