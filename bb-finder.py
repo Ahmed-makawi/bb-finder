@@ -156,8 +156,8 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('-f', '--file', help='Text file containing list of domains (one per line)')
     group.add_argument('-d', '--domain', help='Single domain to check')
-    parser.add_argument('--api', help='Text file containing SerpApi API keys (one per line)')
-    parser.add_argument('--api-key', help='Single SerpApi API key')
+    parser.add_argument('--api', help='Single SerpApi API key')
+    parser.add_argument('--api-keys', help='Text file containing SerpApi API keys (one per line)')
     parser.add_argument('-o', '--output', default='bug_bounty_results.json',
                         help='Output JSON file name (default: bug_bounty_results.json)')
     args = parser.parse_args()
@@ -166,10 +166,10 @@ def main():
     domains = [args.domain] if args.domain else load_domains(args.file)
     
     # Load API keys
-    if args.api:
-        api_keys = load_api_keys(file_path=args.api)
-    elif args.api_key:
-        api_keys = load_api_keys(api_key=args.api_key)
+    if args.api_keys:
+        api_keys = load_api_keys(file_path=args.api_keys)
+    elif args.api:
+        api_keys = load_api_keys(api_key=args.api)
     else:
         print(f"{Fore.RED}Error: No API key or file provided!{Style.RESET_ALL}")
         sys.exit(1)
