@@ -1,4 +1,4 @@
-1# bb-finder
+# bb-finder
 A Python tool that helps you discover bug bounty programs and security vulnerability disclosure pages for specified domains with Google dorking and by using SerpApi's Google Search API.
 
 
